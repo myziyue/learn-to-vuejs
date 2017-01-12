@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="app">
+    <!-- 1、 参数 -->
+    <a v-bind:href="url">url</a>
+
+    <!-- 2、 修饰符 -->
+    <form v-on:submit.prevent="onSubmit">
+        <span>{{num}}</span>
+        <button type="submit">Submit</button>
+    </form>
+</div>
+
+<script src="../vuejs/vue.js"></script>
+<script>
+    var app = new Vue({
+        el: '#app',
+        data: {
+            url: 'https://cn.vuejs.org/',
+            num:1
+        },
+        methods: {
+            onSubmit: function () {
+                this.num++
+            }
+        }
+    })
+</script>
+</body>
+</html>

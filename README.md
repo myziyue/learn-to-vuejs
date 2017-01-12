@@ -6,9 +6,11 @@ vue.js 官方案例代码
 
 - 第一部分 基础
 
-    - [1 介绍](./src/01.introduce/)
+    - 1 介绍
 
-    - [2 Vue实例](./src/02.instance/)
+    - [2 Vue实例](./notes/02.instance.md)
+    
+    - [3 模板语法](./notes/03.syntax.md)
 
 - 第二部分 进阶
 

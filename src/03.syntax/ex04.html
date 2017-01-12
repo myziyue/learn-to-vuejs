@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="app">
+    <!-- 1、完整写法 -->
+    <a v-bind:href="url">完整写法</a>
+    <hr>
+    <!-- 2、缩写 -->
+    <a :href="url">缩写</a>
+
+    <hr>
+
+    <!-- 完整语法 -->
+    <span>click : {{num}} 次</span>
+    <hr>
+    <a v-on:click="doSomething">完整语法</a>
+    <hr>
+    <!-- 缩写 -->
+    <a @click="doSomething">缩写</a>
+
+</div>
+
+<script src="../vuejs/vue.js"></script>
+<script>
+    var app = new Vue({
+        el: '#app',
+        data: {
+            url: 'https://cn.vuejs.org/',
+            num:0
+        },
+        methods: {
+            doSomething: function () {
+                this.num++
+            }
+        }
+    })
+</script>
+</body>
+</html>
