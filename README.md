@@ -18,6 +18,9 @@ vue.js 官方案例代码
     
     - [6 条件渲染](./notes/06.conditional.md)
     
+    - [7 列表渲染](./notes/07.list.md)
+  
+    
 - 第二部分 进阶
 
 
