@@ -16,6 +16,8 @@ vue.js 官方案例代码
     
     - [5 Class 与 Style 绑定](./notes/05.class-and-style.md)
     
+    - [6 条件渲染](./notes/06.conditional.md)
+    
 - 第二部分 进阶
 
 
