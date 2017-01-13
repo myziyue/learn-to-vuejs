@@ -20,6 +20,7 @@ vue.js 官方案例代码
     
     - [7 列表渲染](./notes/07.list.md)
   
+    - [8 事件处理器](./notes/08.events.md)
     
 - 第二部分 进阶
 
