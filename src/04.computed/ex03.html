@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>计算属性 vs Watched Property</title>
+</head>
+<body>
+<div id="app">
+    {{ fullName }}
+</div>
+
+<script src="../vuejs/vue.js"></script>
+<script>
+    var app = new Vue({
+        el: '#app',
+        data: {
+            firstName: 'Foo',
+            lastName: 'Bar',
+            fullName: 'Foo Bar'
+        },
+        watch: {
+            firstName: function (val) {
+                this.fullName = val + ' ' + this.lastName
+            },
+            lastName: function (val) {
+                this.fullName = this.firstName + ' ' + val
+            }
+        }
+    })
+    //更好的方式
+    //        var app = new Vue({
+    //            el: '#app',
+    //            data: {
+    //                firstName: 'Foo',
+    //                lastName: 'Bar'
+    //            },
+    //            computed: {
+    //                fullName: function () {
+    //                    return this.firstName + ' ' + this.lastName
+    //                }
+    //            }
+    //        })
+</script>
+</body>
+</html>
