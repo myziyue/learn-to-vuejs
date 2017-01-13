@@ -12,7 +12,9 @@ vue.js 官方案例代码
     
     - [3 模板语法](./notes/03.syntax.md)
 
-    - [4 计算属性](./notes/03.syntax.md)
+    - [4 计算属性](./notes/04.computed.md)
+    
+    - [5 Class 与 Style 绑定](./notes/05.class-and-style.md)
     
 - 第二部分 进阶
 

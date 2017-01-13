@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>绑定内链样式 - 对象语法</title>
+</head>
+<body>
+<div id="app">
+    <div v-bind:style="{ color: activeColor, fontSize: fontSize + 'px' }">对象语法1</div>
+
+    <div v-bind:style="styleObject">对象语法2</div>
+</div>
+
+<script src="../vuejs/vue.js"></script>
+<script>
+    var vm = new Vue({
+        el: '#app',
+        data: {
+            activeColor: 'red',
+            fontSize: 30,
+            styleObject: {
+                color: 'red',
+                fontSize: '13px'
+            }
+        }
+    })
+</script>
+</body>
+</html>
