@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>绑定 value - 复选框</title>
+</head>
+<body>
+<div id="app">
+    <select v-model="selected">
+        <!-- 内联对象字面量 -->
+        <option v-bind:value="{ number: 123 }">123</option>
+        <option v-bind:value="{ number: 456 }">456</option>
+    </select> {{selected}}
+</div>
+
+<script src="../vuejs/vue.js"></script>
+<script>
+    var app = new Vue({
+        el: '#app',
+        data: {
+            selected: ''
+        }
+    })
+</script>
+</body>
+</html>

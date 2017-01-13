@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>文本</title>
+</head>
+<body>
+<div id="app">
+    单选列表:<br>
+    <select v-model="selected1">
+        <option>A</option>
+        <option>B</option>
+        <option>C</option>
+    </select>
+    <span>Selected: {{ selected1 }}</span>
+
+    <hr>
+    多选列表（绑定到一个数组）：<br>
+    <select v-model="selected2" multiple>
+        <option>A</option>
+        <option>B</option>
+        <option>C</option>
+    </select>
+    <br>
+    <span>Selected: {{ selected2 }}</span>
+
+    <hr>
+    动态选项，用 v-for 渲染：<br>
+
+    <select v-model="selected3">
+        <option v-for="option in options" v-bind:value="option.value">
+            {{ option.text }}
+        </option>
+    </select>
+    <span>Selected: {{ selected3 }}</span>
+</div>
+
+<script src="../vuejs/vue.js"></script>
+<script>
+    var app = new Vue({
+        el: '#app',
+        data: {
+            selected1: [],
+            selected2: [],
+            selected3: 'A',
+            options: [
+                { text: 'One', value: 'A' },
+                { text: 'Two', value: 'B' },
+                { text: 'Three', value: 'C' }
+            ]
+        }
+    })
+</script>
+</body>
+</html>

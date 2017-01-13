@@ -22,6 +22,8 @@ vue.js 官方案例代码
   
     - [8 事件处理器](./notes/08.events.md)
     
+    - [9 表单控件绑定](./notes/09.forms.md)
+    
 - 第二部分 进阶
 
 
