@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>使用组件 - 注册</title>
+</head>
+<body>
+<div id="app">
+    <div class="parent">
+        <child>
+            <template scope="data">
+                <h1>hello from parent</h1>
+                <h2>{{ data.text }}</h2>
+            </template>
+        </child>
+    </div>
+</div>
+
+<script src="../vuejs/vue.js"></script>
+<script>
+    // 注册
+    Vue.component('child', {
+        template: '<div class="child">\
+        <slot text="hello from child"></slot>\
+        </div>'
+    })
+
+    var app = new Vue({
+        el: '#app'
+    })
+</script>
+</body>
+</html>
