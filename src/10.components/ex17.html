@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>使用组件 - 注册</title>
+</head>
+<body>
+<div id="parent">
+    <user-profile ref="profile"></user-profile>
+</div>
+
+<script src="../vuejs/vue.js"></script>
+<script>
+
+    Vue.component('user-profile', function (resolve, reject) {
+        setTimeout(function () {
+            // Pass the component definition to the resolve callback
+            resolve({
+                template: '<div>I am async!</div>'
+            })
+        }, 1000)
+    })
+
+    var parent = new Vue({el: '#parent'})
+</script>
+</body>
+</html>

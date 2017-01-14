@@ -24,6 +24,8 @@ vue.js 官方案例代码
     
     - [9 表单控件绑定](./notes/09.forms.md)
     
+    - [10 组件](./notes/10.components.md)
+    
 - 第二部分 进阶
 
 
