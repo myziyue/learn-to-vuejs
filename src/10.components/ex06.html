@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Prop - camelCase vs. kebab-case</title>
+</head>
+<body>
+<div id="app">
+    <child my-message="hello!"></child>
+</div>
+
+<script src="../vuejs/vue.js"></script>
+<script>
+    // 注册
+    Vue.component('child', {
+        // camelCase in JavaScript
+        props: ['myMessage'],
+        template: '<span>{{ myMessage }}</span>'
+    })
+
+    var app = new Vue({
+        el: '#app'
+    })
+</script>
+</body>
+</html>
